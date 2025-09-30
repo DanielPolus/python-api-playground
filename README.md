@@ -1,26 +1,25 @@
 # Python API Playground
 
-This repository contains mini FastAPI projects for practicing REST API development.  
-The first project here is **Bookmarks API** — a simple CRUD service for managing bookmarks with tags, notes, and favorite flag.
+This repository is a collection of small REST API projects built with **FastAPI** and **Pydantic**.  
+The goal is to practice backend development concepts step by step — from basic CRUD endpoints to databases, authentication, and testing.
 
-## Features
-- Create, read, update and delete bookmarks (CRUD)
-- Data validation with Pydantic (e.g. `HttpUrl` for URL fields, unique normalized tags, length limits)
-- Query filters: search by text, tag, favorite flag
-- Pagination (skip/limit)
-- Auto-generated docs at `/docs` (Swagger UI)
-- Unit tests with pytest + FastAPI TestClient
+## Projects
+- **Bookmarks API** – simple CRUD service for managing bookmarks with tags, notes, and favorite flag.
+- (WIP) **Todo API** – task manager with deadlines and status.
+- (WIP) **Notes API** – personal notes with search and categories.
 
-## Quick start
+## Topics Covered
+- FastAPI basics: routes, path/query/body parameters
+- Data validation with **Pydantic** (`Field`, `HttpUrl`, validators)
+- CRUD patterns (create, read, update, delete)
+- Pagination and filtering
+- Automated tests with **pytest** and `TestClient`
+- API documentation with **Swagger UI** (`/docs`)
+
+## How to Run a Project
+Each project lives in its own folder.  
+To run, enter the folder and use:
+
 ```bash
-# install dependencies
 pip install -r requirements.txt
-
-# run development server
 uvicorn main:app --reload
-
-# open docs
-http://127.0.0.1:8000/docs
-
-# run test
-pytest -v
