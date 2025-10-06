@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Byte-compiled / cache
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.sqlite3
+instance/
+.db.sqlite3
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
